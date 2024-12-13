@@ -60,3 +60,26 @@ ALTER TABLE employees ADD COLUMN dept_id int UNSIGNED;
 ALTER TABLE Contacts ADD CONSTRAINT fk_employees_contacts FOREIGN KEY(emp_id) REFERENCES employees(emp_id);
 ALTER TABLE address ADD CONSTRAINT fk_employees_address FOREIGN KEY(emp_id) REFERENCES employees(emp_id);
 ALTER TABLE employees ADD CONSTRAINT fk_departments_employees FOREIGN KEY(dept_id) REFERENCES departments(dept_id);
+
+insert into Contacts(
+   
+   countryCode,
+   areaCode,
+   number
+)values("+65","0","91118888"),("+65","0","91117777"),("+65","0","91116666");
+
+CREATE TABLE employees(
+   first_name,
+   last_name ,
+    email ,
+gender,
+   emp_date,
+   designation,
+   notes,
+   dept_id
+) values();
+
+INSERT INTO departments(
+   dept_name 
+) values("Research and Development"),("Human Resource"),("Engineering"),("Facilities Management");
+
