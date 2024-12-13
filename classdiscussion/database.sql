@@ -1,3 +1,7 @@
+create database employees;
+
+use employees;
+
 CREATE TABLE taskforces(
    taskforces_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
    name VARCHAR(45) NOT NULL
